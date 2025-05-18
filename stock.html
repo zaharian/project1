@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты поиска - Праздник в каждый дом</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Праздник в каждый дом"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="promo.html">Акции</a></li>
+                    <li><a href="#" class="active">Поиск</a></li>
+                    <li><a href="#">Управление бронированием</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Забронировать праздник</a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="search-results">
+        <div class="container">
+            <h1>Результаты поиска</h1>
+            
+            <!-- Фильтры -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="sort">Сортировка:</label>
+                    <select id="sort">
+                        <option value="price-asc">По цене (дешевые сначала)</option>
+                        <option value="price-desc">По цене (дорогие сначала)</option>
+                        <option value="capacity-asc">По вместимости (меньшие сначала)</option>
+                        <option value="capacity-desc">По вместимости (большие сначала)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="capacity">Вместимость:</label>
+                    <select id="capacity">
+                        <option value="all">Любая</option>
+                        <option value="10">До 10 человек</option>
+                        <option value="20">До 20 человек</option>
+                        <option value="30">До 30 человек</option>
+                        <option value="50">До 50 человек</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Результаты -->
+            <div class="results-grid" id="resultsGrid">
+                <!-- Локации будут добавлены через JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Телефон: <a href="tel:88001112020">8 (800) 111-20-20</a></p>
+                    <p>Email: <a href="mailto:info@prazdnik-dom.ru">info@prazdnik-dom.ru</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="promo.html">Акции</a></li>
+                        <li><a href="#">Бронирование</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><img src="images/vk-icon.png" alt="ВКонтакте"></a>
+                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="images/telegram-icon.png" alt="Telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Праздник в каждый дом, <span id="currentYear"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search-results.js"></script>
+</body>
+</html>

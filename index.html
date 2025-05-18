@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник в каждый дом</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Праздник в каждый дом">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="C:\Users\Home\Desktop\project1/stock.html">Акции</a></li>
+                    <li><a href="/search">Поиск</a></li>
+                    <li><a href="/bron">Управление бронированием</a></li>
+                </ul>
+            </nav>
+            <a href="bronn" class="btn">Забронировать праздник</a>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <h1>Подарим волшебство для ваших детей!</h1>
+            <p>Организуем незабываемый праздник без хлопот</p>
+            <a href="#" class="btn" id="hero-btn">Выбрать локацию</a>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="steps">
+        <div class="container">
+            <h2>Как забронировать праздник?</h2>
+            <div class="steps-container">
+                <!-- Шаги будут добавлены через JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="about">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>О компании</h2>
+                <p><strong>Цель:</strong> Делаем каждый детский праздник особенным!</p>
+                <p><strong>Девиз:</strong> Подарим волшебство для ваших детей!</p>
+                <h3>Отзывы наших клиентов:</h3>
+                <div class="reviews">
+                    <!-- Отзывы будут добавлены через JS -->
+                </div>
+                <p>Рейтинг: ★★★★★ (4.9 из 5)</p>
+            </div>
+            <div class="about-image">
+                <img src="images/about-image.jpg" alt="Детский праздник">
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="search-form">
+        <div class="container">
+            <h2>Найдите идеальную локацию</h2>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="region">Регион</label>
+                    <select id="region" required>
+                        <option value="">Выберите регион</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Казань</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата мероприятия</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">Количество взрослых</label>
+                    <input type="number" id="adults" min="1" max="50" required>
+                </div>
+                <div class="form-group">
+                    <label for="children">Количество детей</label>
+                    <input type="number" id="children" min="1" max="50" required>
+                </div>
+                <button type="submit" class="btn">Найти локации</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Акции -->
+    <section class="promo">
+        <div class="container">
+            <h2>Акции</h2>
+            <div class="promo-grid" id="promoGrid">
+                <!-- Акции будут добавлены через JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe">
+        <div class="container">
+            <h2>Хотите эксклюзивные предложения?</h2>
+            <p>Подпишитесь на наши закрытые акции</p>
+            <form class="subscribe-form" id="subscribeForm">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Телефон: <a href="tel:88001112020">8 (800) 111-20-20</a></p>
+                    <p>Email: <a href="mailto:info@prazdnik-dom.ru">info@prazdnik-dom.ru</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Бронирование</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><img src="C:\Users\Home\Desktop/images/vk.png" alt="ВКонтакте"></a>
+                        <a href="#"><img src="C:\Users\Home\Desktop/images/vk.png" alt="ВКонтакте"></a>
+                        <a href="#"><img src="C:/Users/Home/Desktop/images/telegram.png" alt="Telegram"></a
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Праздник в каждый дом, <span id="currentYear"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
